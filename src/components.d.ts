@@ -32,7 +32,9 @@ declare module '@vue/runtime-core' {
     IEpUser: typeof import('~icons/ep/user')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SideMenu: typeof import('./src/layout/components/SideMenu.vue')['default']
     TheWelcome: typeof import('./components/TheWelcome.vue')['default']
+    TopNav: typeof import('../src/layout/components/TopNav.vue')['default']
     WelcomeItem: typeof import('./components/WelcomeItem.vue')['default']
   }
 }

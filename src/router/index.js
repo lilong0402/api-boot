@@ -2,17 +2,26 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/index.vue'
 import Login from '@/views/login/index.vue'
 import NotFound from '@/views/404.vue'
+import Admin from '../layout/admin.vue'
 import { useAdminStore } from '../stores'
 import { hideFullLoading, showFullLoading } from '../utils/tools'
 
 const routes =[
   {
     path: '/',
-    name: 'index',
-    component: Index,
-    meta: {
-      title: '仪表盘'
-    }
+		name: 'admin',
+		component: Admin,
+		// 子路由
+		children: [
+			{
+				path: '/',
+				name: 'index',
+				component: Index,
+				meta: {
+					title: '仪表盘'
+				}
+			}
+		]
   },
   {
     path: '/login',
@@ -28,10 +37,30 @@ const routes =[
   },
 ] 
 
-const router = createRouter({
+ const router = createRouter({
   routes,
   history: createWebHistory()
 })
+
+ function addRoutes(menus) {
+	// 是否有新的路由
+	let hasNewRoutes = false
+	const findAndAddRoutesByMenus = arr => {
+		arr.forEach(e => {
+			if (e.children && e.children.length > 0) {
+				findAndAddRoutesByMenus(e.children)
+			}
+			let item = asyncRoutes.find(o => o.path == e.url)
+			if (item && !router.hasRoute(item.path)) {
+				router.addRoute('admin', item)
+				hasNewRoutes = true
+			}
+		})
+	}
+	findAndAddRoutesByMenus(menus)
+	return hasNewRoutes
+}
+
 router.beforeEach(async (to, from, next) => {
 //显示全局进度条
   showFullLoading()
