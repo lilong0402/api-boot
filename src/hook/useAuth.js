@@ -1,3 +1,4 @@
+import  {useAdminStore} from '../stores/index'
 //账号密码登录 hooks
 export function useAccountLogin() {
     const router = useRouter()

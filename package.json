@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@element-plus/icons-vue": "^2.1.0",
+    "@iconify-json/ep": "^1.1.10",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/eslint-config-prettier": "^7.1.0",
