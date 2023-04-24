@@ -37,6 +37,9 @@ import HelloWorld from './components/HelloWorld.vue'
     <el-icon size="32" class="text-sky-500">
       <Edit />
     </el-icon>
+    <template>
+      <router-view />
+    </template>
   </div>
 </template>
 
