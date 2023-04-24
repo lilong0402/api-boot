@@ -1,4 +1,8 @@
 <script setup>
+import { useAdminStore } from '../../stores'
+import { useLogout } from '../../hook/useAuth'
+import { usePassword } from '../../hook/useAdmin'
+
 const store = useAdminStore()
 const { adminInfo } = storeToRefs(store)
 

@@ -1,23 +1,32 @@
 <script setup>
 // import top-nav from '../'
 import { useAdminStore } from '../stores'
+// import {  } from '../stores'
+
+// import top-nav form '../'
+import sidemenu from './components/SideMenu.vue'
+import topnav from './components/TopNav.vue'
+import breadcrumbs from './components/BreadCrumbs.vue'
+// import sidemenu from './components/FormDrawer.vue'
+
 const store = useAdminStore()
+
 const { sideWidth } = storeToRefs(store)
 </script>
 
 <template>
   <el-container>
     <el-header>
-      <top-nav />
+      <topnav />
     </el-header>
 
     <el-container>
       <el-aside :style="{ width: sideWidth }">
-        <side-menu />
+        <sidemenu />
       </el-aside>
 
       <el-main>
-        <bread-crumbs />
+        <breadcrumbs />
         <router-view v-slot="{ Component }">
           <transition name="fade">
             <keep-alive :max="10">

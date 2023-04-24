@@ -3,7 +3,8 @@ export const useAdminStore = defineStore('admin', {
   state: () => ({
     adminInfo: {},
     menus: [],
-    authorities: []
+    authorities: [],
+    sideWidth: '220px',
   }),
   actions: {
     // 登录
@@ -43,6 +44,9 @@ export const useAdminStore = defineStore('admin', {
           })
           .catch(err => reject(err))
       })
-    }
+    },
+    handleSideWidth() {
+      this.sideWidth = this.sideWidth === '220px' ? '64px' : '220px'
+    },
   }
 })
