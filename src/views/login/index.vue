@@ -7,7 +7,7 @@ const form = reactive({
 
 const handleLogin = () => {
   login(form).then((res) => {
-    console.log(res.data.data)
+    console.log(res)
   })
 }
 </script>
