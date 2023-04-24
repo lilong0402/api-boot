@@ -17,6 +17,7 @@
     <modules>
         <module>api-base</module>
         <module>api-admin-core</module>
+        <module>api-admin-biz</module>
     </modules>
 
     <properties>
