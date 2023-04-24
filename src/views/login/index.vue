@@ -1,6 +1,7 @@
 <script setup>
 import Account from './account.vue'
 import Mobile from './mobile.vue'
+
 // 登录类型切换
 const loginType = ref('account')
 const title = ref('账号密码登录')

@@ -1,3 +1,5 @@
+import nProgress from "nprogress"
+
 // 封装消息提示组件
 export function toast(message, type = 'success', duration = 1000) {
     ElNotification({
@@ -14,4 +16,14 @@ export function toast(message, type = 'success', duration = 1000) {
       cancelButtonText: '取消',
       type
     })
+
+   
   }
+    //显示全局进度条
+    export function showFullLoading() {
+      nProgress.start()
+    }
+    // 隐藏全局进度条
+    export function hideFullLoading(){
+      nProgress.done()
+    }
