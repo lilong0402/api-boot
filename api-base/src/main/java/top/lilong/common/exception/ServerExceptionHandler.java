@@ -2,7 +2,7 @@ package top.lilong.common.exception;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.common.utils.Result;
+import top.lilong.common.utils.Result;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;

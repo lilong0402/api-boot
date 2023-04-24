@@ -3,7 +3,7 @@ package top.lilong.common.utils;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import org.example.common.exception.ErrorCode;
+import top.lilong.common.exception.ErrorCode;
 
 
 /**

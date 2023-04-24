@@ -3,7 +3,7 @@ package top.lilong.common.utils;
 
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
-import org.example.common.exception.ServerException;
+import top.lilong.common.exception.ServerException;
 
 
 /**
