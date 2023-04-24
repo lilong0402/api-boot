@@ -4,8 +4,10 @@ import { useLogout } from '../../hook/useAuth'
 import { usePassword } from '../../hook/useAdmin'
 
 const store = useAdminStore()
-const { adminInfo } = storeToRefs(store)
+const { adminInfo, sideWidth, handleSideWidth } = storeToRefs(store)
 
+const { ifFullscreen, toggle } = useFullscreen()
+const handleRefresh = () => location.reload()
 const { handleLogout } = useLogout()
 // const {formDrawerRef,form,rules,forRe}
 const { formDrawerRef, form, rules, formRef, onSubmit, openRepasswordForm } = usePassword()
@@ -14,17 +16,26 @@ const { formDrawerRef, form, rules, formRef, onSubmit, openRepasswordForm } = us
 <template>
   <div class="f-header v-center">
     <RouterLink to="/">
-      <div class="f-center transition-all duration-500" style="width: 220px">
-        <span class="text-2xl">极客空间</span>
+      <div class="f-center text-[1.5rem] transition-all duration-500" :style="{ width: sideWidth }">
+        <IEpElementPlus class="mr-3" />
+        <span v-show="sideWidth" class="text-2xl">极客空间</span>
       </div>
     </RouterLink>
+    <div @click="handleSideWidth" class="icon v-center">
+      <IEpFold v-if="sideWidth === '220px'"></IEpFold>
+      <IEpExpand v-else></IEpExpand>
+    </div>
 
-    <div class="v-center">
-      <IEpFold />
+    <div class="ml-auto v-center">
+      <IEpRefresh class="icon" @click="handleRefresh"></IEpRefresh>
     </div>
 
     <div class="ml-auto v-center">
       <IEpRefresh class="icon" />
+      <div @click="toggle" class="icon v-center">
+        <IEpFullScreen v-if="!isFullscreen"></IEpFullScreen>
+        <IEpAim v-else></IEpAim>
+      </div>
       <IEpFullScreen class="icon" />
       <IEpPrinter class="icon" />
       <IEpSetting class="icon" />

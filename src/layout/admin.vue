@@ -1,13 +1,9 @@
 <script setup>
-// import top-nav from '../'
 import { useAdminStore } from '../stores'
-// import {  } from '../stores'
 
-// import top-nav form '../'
 import sidemenu from './components/SideMenu.vue'
 import topnav from './components/TopNav.vue'
 import breadcrumbs from './components/BreadCrumbs.vue'
-// import sidemenu from './components/FormDrawer.vue'
 
 const store = useAdminStore()
 
