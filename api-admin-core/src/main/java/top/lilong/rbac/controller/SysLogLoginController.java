@@ -32,5 +32,7 @@ public class SysLogLoginController {
     public Result<PageResult<SysLogLoginVO>> page(@ParameterObject @Valid SysLogLoginQuery query) {
         PageResult<SysLogLoginVO> page = sysLogLoginService.page(query);
         return Result.ok(page);
+
+
     }
 }
