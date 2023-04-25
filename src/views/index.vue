@@ -76,12 +76,13 @@ getStatistics3().then((res) => {
     <el-row :gutter="20" class="mt-5">
       <el-col :span="12">
         <IndexChart></IndexChart>
+        <IndexPie></IndexPie>
       </el-col>
       <!-- <el-col :span="12"> -->
       <!-- <IndexChart></IndexChart>
       </el-col> -->
       <el-col :span="12">
-        <IndexTag title="店铺及商品提示" tip="店铺及商品提示" :btns="goods" class="mb-3"></IndexTag>
+        <IndexTag title="店铺及商品提示" tip="店铺及商品提示" :btns="goods" class="mb-2"></IndexTag>
         <IndexTag title="交易展示" tip="需要立即处理的交易订单" :btns="orders"></IndexTag>
       </el-col>
     </el-row>
