@@ -4,10 +4,10 @@ import cn.hutool.core.util.StrUtil;
 import com.wf.captcha.SpecCaptcha;
 import com.wf.captcha.base.Captcha;
 import lombok.AllArgsConstructor;
-import org.example.common.cache.RedisCache;
-import org.example.common.cache.RedisKeys;
-import org.example.rbac.service.SysCaptchaService;
-import org.example.rbac.vo.SysCaptchaVO;
+import top.lilong.common.cache.RedisCache;
+import top.lilong.common.cache.RedisKeys;
+import top.lilong.rbac.service.SysCaptchaService;
+import top.lilong.rbac.vo.SysCaptchaVO;
 import org.springframework.stereotype.Service;
 
 

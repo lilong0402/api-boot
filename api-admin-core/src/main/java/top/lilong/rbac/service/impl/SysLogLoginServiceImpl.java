@@ -9,7 +9,7 @@ import top.lilong.common.utils.HttpContextUtils;
 import top.lilong.common.utils.IpUtils;
 import top.lilong.common.utils.PageResult;
 import top.lilong.mybatis.service.impl.BaseServiceImpl;
-import top.lilong.rbac.controller.SysLogLoginConvert;
+import top.lilong.rbac.convert.SysLogLoginConvert;
 import top.lilong.rbac.dao.SysLogLoginDao;
 import top.lilong.rbac.entity.SysLogLoginEntity;
 import top.lilong.rbac.query.SysLogLoginQuery;

@@ -1,8 +1,8 @@
 package top.lilong.rbac.service.impl;
-import org.example.mybatis.service.impl.BaseServiceImpl;
-import org.example.rbac.dao.SysUserRoleDao;
-import org.example.rbac.entity.SysUserRoleEntity;
-import org.example.rbac.service.SysUserRoleService;
+import top.lilong.mybatis.service.impl.BaseServiceImpl;
+import top.lilong.rbac.dao.SysUserRoleDao;
+import top.lilong.rbac.entity.SysUserRoleEntity;
+import top.lilong.rbac.service.SysUserRoleService;
 import org.springframework.stereotype.Service;
 
 /**

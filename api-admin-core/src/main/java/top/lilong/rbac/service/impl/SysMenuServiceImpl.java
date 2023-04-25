@@ -1,16 +1,16 @@
 package top.lilong.rbac.service.impl;
 import cn.hutool.core.util.StrUtil;
 import lombok.AllArgsConstructor;
-import org.example.common.constant.Constant;
-import org.example.common.utils.TreeUtils;
-import org.example.mybatis.service.impl.BaseServiceImpl;
-import org.example.rbac.convert.SysMenuConvert;
-import org.example.rbac.dao.SysMenuDao;
-import org.example.rbac.entity.SysMenuEntity;
-import org.example.rbac.enums.SuperAdminEnum;
-import org.example.rbac.service.SysMenuService;
-import org.example.rbac.vo.SysMenuVO;
-import org.example.security.user.UserDetail;
+import top.lilong.common.constant.Constant;
+import top.lilong.common.utils.TreeUtils;
+import top.lilong.mybatis.service.impl.BaseServiceImpl;
+import top.lilong.rbac.convert.SysMenuConvert;
+import top.lilong.rbac.dao.SysMenuDao;
+import top.lilong.rbac.entity.SysMenuEntity;
+import top.lilong.rbac.enums.SuperAdminEnum;
+import top.lilong.rbac.service.SysMenuService;
+import top.lilong.rbac.vo.SysMenuVO;
+import top.lilong.security.user.UserDetail;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;

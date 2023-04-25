@@ -1,9 +1,9 @@
 package top.lilong.rbac.service.impl;
 
 import lombok.AllArgsConstructor;
-import org.example.rbac.dao.SysUserDao;
-import org.example.rbac.entity.SysUserEntity;
-import org.example.rbac.service.SysUserDetailsService;
+import top.lilong.rbac.dao.SysUserDao;
+import top.lilong.rbac.entity.SysUserEntity;
+import top.lilong.rbac.service.SysUserDetailsService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

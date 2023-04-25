@@ -2,8 +2,8 @@ package top.lilong.mybatis.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
-import org.example.security.user.SecurityUser;
-import org.example.security.user.UserDetail;
+import top.lilong.security.user.SecurityUser;
+import top.lilong.security.user.UserDetail;
 
 import java.util.Date;
 

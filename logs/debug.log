@@ -1,0 +1,6 @@
+2023-04-25 13:29:24.638 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25 13:29:26.630 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-25 13:51:51.223 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25 13:51:52.991 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-25 13:52:29.216 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25 13:52:31.301 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use

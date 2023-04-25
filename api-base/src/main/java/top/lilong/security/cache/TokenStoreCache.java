@@ -2,9 +2,9 @@ package top.lilong.security.cache;
 
 
 import lombok.AllArgsConstructor;
-import org.example.common.cache.RedisCache;
-import org.example.common.cache.RedisKeys;
-import org.example.security.user.UserDetail;
+import top.lilong.common.cache.RedisCache;
+import top.lilong.common.cache.RedisKeys;
+import top.lilong.security.user.UserDetail;
 import org.springframework.stereotype.Component;
 
 

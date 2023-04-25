@@ -1,11 +1,11 @@
 package top.lilong.rbac.service.impl;
 import lombok.AllArgsConstructor;
-import org.example.rbac.convert.SysUserConvert;
-import org.example.rbac.entity.SysUserEntity;
-import org.example.rbac.enums.UserStatusEnum;
-import org.example.rbac.service.SysMenuService;
-import org.example.rbac.service.SysUserDetailsService;
-import org.example.security.user.UserDetail;
+import top.lilong.rbac.convert.SysUserConvert;
+import top.lilong.rbac.entity.SysUserEntity;
+import top.lilong.rbac.enums.UserStatusEnum;
+import top.lilong.rbac.service.SysMenuService;
+import top.lilong.rbac.service.SysUserDetailsService;
+import top.lilong.security.user.UserDetail;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 

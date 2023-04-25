@@ -1,7 +1,7 @@
 package top.lilong.security.config;
 
 import lombok.AllArgsConstructor;
-import org.example.security.exception.SecurityAuthenticationEntryPoint;
+import top.lilong.security.exception.SecurityAuthenticationEntryPoint;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

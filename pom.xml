@@ -18,14 +18,13 @@
         <module>api-base</module>
         <module>api-admin-core</module>
         <module>api-admin-biz</module>
+        <module>api-server</module>
     </modules>
 
     <properties>
         <revision>1.0.0</revision>
         <skipTests>true</skipTests>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+
         <mybatisplus.version>3.5.3.1</mybatisplus.version>
         <knife4j.version>4.1.0</knife4j.version>
         <hutool.version>5.8.11</hutool.version>
@@ -51,6 +50,10 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>aliyun-oss-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 
@@ -103,25 +106,32 @@
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <!--                <version>${aliyun.oss.version}</version>-->
-                <version>3.11.2</version>
+                <version>3.16.1</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>aliyun-spring-boot-dependencies</artifactId>
+                <version>1.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- 阿里云短信 API -->
             <dependency>
                 <groupId>com.aliyun</groupId>
                 <!--                <artifactId>dysmsapi20170525</artifactId>-->
                 <!--                <version>${aliyun.dysmsapi.version}</version>-->
                 <artifactId>aliyun-java-sdk-core</artifactId>
-                <version>4.5.25</version>
+                <version>4.6.3</version>
             </dependency>
 
-            <!-- minio 分布式文件系统 -->
-            <dependency>
-                <groupId>io.minio</groupId>
-                <artifactId>minio</artifactId>
-                <!--                <version>${minio.version}</version>-->
-                <version>8.2.2</version>
-            </dependency>
+<!--            &lt;!&ndash; minio 分布式文件系统 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>io.minio</groupId>-->
+<!--                <artifactId>minio</artifactId>-->
+<!--                &lt;!&ndash;                <version>${minio.version}</version>&ndash;&gt;-->
+<!--                <version>8.5.1</version>-->
+<!--            </dependency>-->
 
             <!-- excel 处理库-->
             <dependency>

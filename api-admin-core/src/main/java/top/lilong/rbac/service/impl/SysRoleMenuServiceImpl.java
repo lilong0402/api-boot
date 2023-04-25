@@ -1,8 +1,8 @@
 package top.lilong.rbac.service.impl;
-import org.example.mybatis.service.impl.BaseServiceImpl;
-import org.example.rbac.dao.SysRoleMenuDao;
-import org.example.rbac.entity.SysRoleMenuEntity;
-import org.example.rbac.service.SysRoleMenuService;
+import top.lilong.mybatis.service.impl.BaseServiceImpl;
+import top.lilong.rbac.dao.SysRoleMenuDao;
+import top.lilong.rbac.entity.SysRoleMenuEntity;
+import top.lilong.rbac.service.SysRoleMenuService;
 import org.springframework.stereotype.Service;
 
 

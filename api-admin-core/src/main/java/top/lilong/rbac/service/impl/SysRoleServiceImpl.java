@@ -1,10 +1,10 @@
 package top.lilong.rbac.service.impl;
 
 import lombok.AllArgsConstructor;
-import org.example.mybatis.service.impl.BaseServiceImpl;
-import org.example.rbac.dao.SysRoleDao;
-import org.example.rbac.entity.SysRoleEntity;
-import org.example.rbac.service.SysRoleService;
+import top.lilong.mybatis.service.impl.BaseServiceImpl;
+import top.lilong.rbac.dao.SysRoleDao;
+import top.lilong.rbac.entity.SysRoleEntity;
+import top.lilong.rbac.service.SysRoleService;
 import org.springframework.stereotype.Service;
 
 

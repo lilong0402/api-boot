@@ -5,8 +5,8 @@ import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.example.common.query.Query;
-import org.example.mybatis.service.BaseService;
+import top.lilong.common.query.Query;
+import top.lilong.mybatis.service.BaseService;
 
 
 /**

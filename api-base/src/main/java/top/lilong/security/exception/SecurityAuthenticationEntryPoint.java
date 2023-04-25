@@ -3,10 +3,10 @@ package top.lilong.security.exception;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.example.common.exception.ErrorCode;
-import org.example.common.utils.HttpContextUtils;
-import org.example.common.utils.JsonUtils;
-import org.example.common.utils.Result;
+import top.lilong.common.exception.ErrorCode;
+import top.lilong.common.utils.HttpContextUtils;
+import top.lilong.common.utils.JsonUtils;
+import top.lilong.common.utils.Result;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 

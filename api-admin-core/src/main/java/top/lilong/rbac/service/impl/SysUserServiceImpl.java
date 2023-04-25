@@ -1,9 +1,9 @@
 package top.lilong.rbac.service.impl;
 import lombok.AllArgsConstructor;
-import org.example.mybatis.service.impl.BaseServiceImpl;
-import org.example.rbac.dao.SysUserDao;
-import org.example.rbac.entity.SysUserEntity;
-import org.example.rbac.service.SysUserService;
+import top.lilong.mybatis.service.impl.BaseServiceImpl;
+import top.lilong.rbac.dao.SysUserDao;
+import top.lilong.rbac.entity.SysUserEntity;
+import top.lilong.rbac.service.SysUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

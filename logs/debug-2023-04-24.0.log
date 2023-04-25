@@ -1,0 +1,1029 @@
+2023-04-24 10:51:15.150 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 10:51:16.887 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 10:55:21.273 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 10:55:23.060 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 14:57:52.261 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 14:57:54.300 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 14:58:47.009 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 14:58:47.027 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 14:58:47.044 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 14:58:47.050 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 14:58:47.050 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 14:58:47.053 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 14:58:47.138 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 14:58:47.139 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 14:58:47.135(Timestamp)
+2023-04-24 14:58:47.145 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 14:58:53.425 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 14:58:53.426 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 14:58:53.427 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 14:58:53.427 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 14:58:53.428 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 14:58:53.429 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 14:58:53.505 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 14:58:53.505 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 14:58:53.504(Timestamp)
+2023-04-24 14:58:53.509 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 14:58:54.298 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 14:58:54.298 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 14:58:54.299 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 14:58:54.300 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 14:58:54.300 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 14:58:54.301 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 14:58:54.377 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 14:58:54.378 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 14:58:54.377(Timestamp)
+2023-04-24 14:58:54.381 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:07:06.021 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:07:06.022 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:07:06.025 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:07:06.025 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:07:06.026 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:07:06.027 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:07:06.103 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:07:06.104 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:07:06.103(Timestamp)
+2023-04-24 15:07:06.106 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:18:52.803 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:18:52.803 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:18:52.805 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:18:52.805 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:18:52.806 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:18:52.807 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:18:52.883 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:18:52.884 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:18:52.883(Timestamp)
+2023-04-24 15:18:52.888 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:18:53.825 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:18:53.826 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:18:53.827 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:18:53.828 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:18:53.829 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:18:53.830 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:18:53.909 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:18:53.910 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:18:53.909(Timestamp)
+2023-04-24 15:18:53.913 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:18:54.532 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:18:54.533 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:18:54.534 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:18:54.534 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:18:54.534 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:18:54.535 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:18:54.612 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:18:54.613 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:18:54.612(Timestamp)
+2023-04-24 15:18:54.617 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:18:54.754 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:18:54.754 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:18:54.755 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:18:54.756 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:18:54.756 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:18:54.759 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:18:54.838 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:18:54.839 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:18:54.837(Timestamp)
+2023-04-24 15:18:54.840 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:26:11.490 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:26:11.491 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:26:11.492 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:26:11.493 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:26:11.493 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:26:11.494 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:26:11.592 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:26:11.593 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:26:11.592(Timestamp)
+2023-04-24 15:26:11.595 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:26:21.209 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:26:21.209 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:26:21.210 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:26:21.210 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:26:21.210 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:26:21.211 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:26:21.286 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:26:21.287 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:26:21.286(Timestamp)
+2023-04-24 15:26:21.291 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:28:16.313 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:28:16.313 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:28:16.314 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:28:16.314 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:28:16.315 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:28:16.315 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:28:16.391 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:28:16.392 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:28:16.391(Timestamp)
+2023-04-24 15:28:16.393 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:29:46.065 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:29:46.066 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:29:46.066 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:29:46.067 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:29:46.067 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:29:46.068 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:29:46.144 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:29:46.144 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:29:46.143(Timestamp)
+2023-04-24 15:29:46.147 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:29:47.403 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:29:47.403 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:29:47.407 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:29:47.409 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:29:47.409 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:29:47.410 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:30:01.831 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:30:01.831 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:30:01.832 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:30:01.832 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:30:01.833 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:30:01.833 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:30:01.910 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:30:01.910 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:30:01.91(Timestamp)
+2023-04-24 15:30:01.913 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:30:03.339 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:30:03.339 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:30:03.342 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:30:03.343 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:30:03.343 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:30:03.344 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:39:13.291 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:39:13.292 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:39:13.295 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:39:13.296 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:39:13.296 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:39:13.297 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:39:13.378 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:39:13.379 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:39:13.378(Timestamp)
+2023-04-24 15:39:13.382 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:41:17.052 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:41:17.052 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:41:17.053 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:41:17.054 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:41:17.054 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:41:17.055 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:41:17.133 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:41:17.134 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:41:17.133(Timestamp)
+2023-04-24 15:41:17.135 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:43:51.049 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:43:51.049 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:43:51.051 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:43:51.052 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:43:51.052 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:43:51.052 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:43:51.129 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:43:51.130 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 15:43:51.129(Timestamp)
+2023-04-24 15:43:51.134 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:43:59.259 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:43:59.259 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:43:59.261 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:43:59.262 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:43:59.262 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:43:59.263 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:43:59.346 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:43:59.346 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:43:59.345(Timestamp)
+2023-04-24 15:43:59.350 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:49:45.959 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:49:45.959 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:49:45.961 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:49:45.962 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:49:45.962 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:49:45.963 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:49:46.044 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:49:46.044 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 15:49:46.044(Timestamp)
+2023-04-24 15:49:46.048 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:49:46.062 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:49:46.062 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:49:46.064 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:49:46.065 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:49:46.065 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:49:46.066 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:50:37.056 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:50:37.056 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:50:37.058 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:50:37.059 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:50:37.060 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:50:37.060 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:50:57.544 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:50:57.544 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:50:57.546 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:50:57.547 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:50:57.547 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:50:57.548 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:52:51.047 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:52:51.048 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:52:51.050 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:52:51.051 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:52:51.051 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:52:51.052 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:53:24.942 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:53:24.943 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:53:24.945 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:53:24.946 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:53:24.946 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:53:24.947 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:53:56.545 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:53:56.546 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:53:56.547 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:53:56.548 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:53:56.548 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:53:56.549 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:58:36.733 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:58:36.733 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:58:36.736 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:58:36.737 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:58:36.737 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:58:36.738 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:58:37.741 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:58:37.741 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:58:37.744 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:58:37.745 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:58:37.745 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:58:37.746 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:58:38.599 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:58:38.599 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:58:38.602 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:58:38.603 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:58:38.604 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:58:38.605 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:59:02.146 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:59:02.146 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:59:02.147 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:59:02.148 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:59:02.148 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:59:02.149 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:59:11.946 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 15:59:11.947 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 15:59:11.947 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 15:59:11.947 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:59:11.948 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:59:11.948 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 15:59:12.025 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 15:59:12.025 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 15:59:12.024(Timestamp)
+2023-04-24 15:59:12.028 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 15:59:12.049 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 15:59:12.050 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 15:59:12.051 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 15:59:12.052 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 15:59:12.052 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 15:59:12.052 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:00:48.190 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:00:48.190 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:00:48.192 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:00:48.194 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:00:48.195 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:00:48.196 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:06.542 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:06.542 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:06.545 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:06.545 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:06.546 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:06.547 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:07.249 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:07.249 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:07.251 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:07.252 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:07.252 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:07.252 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:11.004 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:11.005 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:11.007 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:11.008 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:11.008 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:11.009 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:28.362 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:01:28.363 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:01:28.364 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:01:28.364 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:28.364 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:28.365 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:28.441 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:01:28.441 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:01:28.441(Timestamp)
+2023-04-24 16:01:28.445 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:01:28.460 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:28.460 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:28.461 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:28.462 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:28.462 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:28.462 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:36.715 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:36.715 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:36.716 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:36.716 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:36.716 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:36.717 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:41.473 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:01:41.473 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:01:41.474 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:01:41.474 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:41.475 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:41.475 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:01:41.553 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:01:41.553 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:01:41.552(Timestamp)
+2023-04-24 16:01:41.558 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:01:41.579 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:01:41.579 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:01:41.580 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:01:41.581 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:01:41.581 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:01:41.581 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:02:00.843 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:02:00.843 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:02:00.844 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:02:00.845 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:02:00.845 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:02:00.845 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:02:01.207 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:02:01.207 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:02:01.208 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:02:01.208 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:02:01.209 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:02:01.209 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:02:07.045 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:02:07.046 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:02:07.047 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:02:07.047 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:02:07.047 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:02:07.048 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:02:12.071 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:02:12.071 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:02:12.071 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:02:12.072 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:02:12.072 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:02:12.072 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:02:12.149 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:02:12.149 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:02:12.148(Timestamp)
+2023-04-24 16:02:12.150 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:02:12.164 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:02:12.164 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:02:12.165 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:02:12.165 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:02:12.165 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:02:12.166 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:04:20.034 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:04:20.034 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:04:20.034 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:04:20.035 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:04:20.035 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:04:20.035 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:04:20.111 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:04:20.111 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:04:20.111(Timestamp)
+2023-04-24 16:04:20.115 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:04:20.137 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:04:20.138 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:04:20.138 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:04:20.139 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:04:20.139 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:04:20.140 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:04:37.336 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:04:37.337 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:04:37.338 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:04:37.338 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:04:37.338 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:04:37.339 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:16.087 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:06:16.088 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:06:16.089 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:06:16.090 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:16.091 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:16.091 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:16.896 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:06:16.897 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:06:16.898 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:06:16.898 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:16.899 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:16.899 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:20.575 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:06:20.575 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:06:20.577 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:06:20.577 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:20.577 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:20.578 [http-nio-8080-exec-16] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:24.886 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:06:24.886 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:06:24.888 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:06:24.889 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:24.889 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:24.890 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:29.338 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:06:29.338 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:06:29.339 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:06:29.339 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:29.339 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:29.340 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:06:29.419 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:06:29.420 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:06:29.419(Timestamp)
+2023-04-24 16:06:29.424 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:06:29.435 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:06:29.436 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:06:29.437 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:06:29.438 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:06:29.438 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:06:29.438 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:08:11.358 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:08:11.359 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:08:11.361 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:08:11.362 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:08:11.362 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:08:11.363 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:08:18.477 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:08:18.477 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:08:18.478 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:08:18.478 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:08:18.479 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:08:18.479 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:08:18.555 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:08:18.555 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:08:18.554(Timestamp)
+2023-04-24 16:08:18.558 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:08:18.573 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:08:18.573 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:08:18.574 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:08:18.575 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:08:18.575 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:08:18.576 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:20.531 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:12:20.532 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:12:20.533 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:12:20.534 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:20.534 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:20.534 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:21.029 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:12:21.029 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:12:21.030 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:12:21.031 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:21.031 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:21.032 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:26.753 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:12:26.753 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:12:26.754 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:12:26.754 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:26.754 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:26.755 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:31.813 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:12:31.813 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:12:31.814 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:12:31.814 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:31.814 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:31.814 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:31.893 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:12:31.893 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:12:31.892(Timestamp)
+2023-04-24 16:12:31.894 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:12:31.908 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:12:31.908 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:12:31.909 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:12:31.909 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:31.909 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:31.909 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:49.555 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:12:49.556 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:12:49.556 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:12:49.556 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:49.557 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:49.557 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:12:49.633 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:12:49.633 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:12:49.632(Timestamp)
+2023-04-24 16:12:49.634 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:12:49.654 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:12:49.654 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:12:49.655 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:12:49.655 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:12:49.655 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:12:49.655 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:15:11.032 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:15:11.032 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:15:11.033 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:15:11.034 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:15:11.035 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:15:11.035 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:15:11.379 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:15:11.380 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:15:11.381 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:15:11.382 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:15:11.382 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:15:11.382 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:15:11.470 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:15:11.470 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:15:11.471 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:15:11.471 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:15:11.472 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:15:11.472 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:18:59.997 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:18:59.997 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:18:59.999 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:18:59.999 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:18:59.999 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:19:00.000 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:19:00.733 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:19:00.733 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:19:00.735 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:19:00.736 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:19:00.736 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:19:00.736 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:19:04.570 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:19:04.570 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:19:04.571 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:19:04.571 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:19:04.571 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:19:04.571 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:19:04.647 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:19:04.647 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:19:04.646(Timestamp)
+2023-04-24 16:19:04.650 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:19:04.661 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:19:04.661 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:19:04.662 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:19:04.663 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:19:04.663 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:19:04.663 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:19:05.435 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:19:05.435 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:19:05.437 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:19:05.438 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:19:05.438 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:19:05.438 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:20:04.749 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:20:04.749 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:20:04.750 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:20:04.750 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:20:04.750 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:20:04.750 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:20:04.828 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:20:04.828 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:20:04.828(Timestamp)
+2023-04-24 16:20:04.830 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:20:04.849 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:20:04.850 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:20:04.850 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:20:04.851 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:20:04.851 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:20:04.851 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:25:36.181 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:25:36.181 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:25:36.183 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:25:36.184 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:25:36.184 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:25:36.184 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:25:37.209 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:25:37.209 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:25:37.211 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:25:37.212 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:25:37.212 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:25:37.213 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:25:37.303 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:25:37.304 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:25:37.305 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:25:37.306 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:25:37.307 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:25:37.307 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:00.262 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:00.262 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:00.263 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:00.264 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:00.265 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:00.265 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:01.233 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:01.233 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:01.235 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:01.236 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:01.237 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:01.237 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:01.238 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:01.238 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:01.240 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:01.241 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:01.241 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:01.242 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:14.400 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:14.400 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:14.402 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:14.403 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:14.403 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:14.404 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:15.359 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:15.359 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:15.361 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:15.362 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:15.362 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:15.363 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:15.364 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:15.365 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:15.367 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:15.367 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:15.368 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:15.368 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:16.961 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:16.961 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:16.964 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:16.965 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:16.965 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:16.966 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:17.685 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:17.686 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:17.688 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:17.689 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:17.689 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:17.690 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:17.951 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:17.952 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:17.954 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:17.955 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:17.955 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:17.956 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:18.238 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:18.239 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:18.241 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:18.241 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:18.242 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:18.242 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:42.468 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:42.468 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:42.470 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:42.471 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:42.471 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:42.472 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:52.785 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:26:52.785 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:26:52.785 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:26:52.786 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:52.786 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:52.786 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:26:52.865 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:26:52.865 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:26:52.864(Timestamp)
+2023-04-24 16:26:52.868 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:26:52.880 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:26:52.880 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:26:52.881 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:26:52.881 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:26:52.881 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:26:52.882 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:27:51.801 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:27:51.802 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:27:51.803 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:27:51.804 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:27:51.804 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:27:51.805 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:29:52.686 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:29:52.686 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:29:52.687 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:29:52.688 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:29:52.688 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:29:52.689 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:29:57.040 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:29:57.040 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:29:57.041 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:29:57.041 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:29:57.041 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:29:57.041 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:29:57.118 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:29:57.118 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:29:57.117(Timestamp)
+2023-04-24 16:29:57.121 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:29:57.137 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:29:57.137 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:29:57.138 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:29:57.138 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:29:57.139 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:29:57.139 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:31:13.991 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:31:13.991 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:31:13.992 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:31:13.992 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:31:13.992 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:31:13.993 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:31:55.529 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:31:55.529 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:31:55.530 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:31:55.531 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:31:55.531 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:31:55.531 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:32:20.924 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:32:20.924 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:32:20.924 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:32:20.925 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:32:20.925 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:32:20.925 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:32:21.000 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:32:21.001 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:32:21.0(Timestamp)
+2023-04-24 16:32:21.004 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:32:21.022 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:32:21.023 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:32:21.023 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:32:21.024 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:32:21.024 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:32:21.024 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:32:29.995 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:32:29.996 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:32:29.996 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:32:29.997 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:32:29.997 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:32:29.998 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:32:33.255 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:32:33.255 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:32:33.255 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:32:33.256 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:32:33.256 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:32:33.256 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:32:33.336 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:32:33.336 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:32:33.336(Timestamp)
+2023-04-24 16:32:33.340 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:32:33.359 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:32:33.359 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:32:33.360 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:32:33.360 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:32:33.360 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:32:33.361 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:05.148 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:36:05.148 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:36:05.149 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:36:05.150 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:05.150 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:05.150 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:05.234 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:36:05.234 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:36:05.233(Timestamp)
+2023-04-24 16:36:05.238 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:36:05.249 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:36:05.249 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:36:05.250 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:36:05.251 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:05.251 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:05.251 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:07.631 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:36:07.631 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:36:07.633 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:36:07.633 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:07.634 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:07.634 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:16.047 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:36:16.047 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:36:16.048 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:36:16.048 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:16.048 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:16.048 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:32.712 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:36:32.713 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:36:32.713 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:36:32.714 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:32.714 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:32.715 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:36:32.790 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:36:32.790 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:36:32.79(Timestamp)
+2023-04-24 16:36:32.792 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:36:32.805 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:36:32.805 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:36:32.806 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:36:32.807 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:36:32.807 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:36:32.807 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:37:58.261 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:37:58.261 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:37:58.263 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:37:58.263 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:37:58.263 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:37:58.264 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:37:58.341 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:37:58.341 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 16:37:58.341(Timestamp)
+2023-04-24 16:37:58.345 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:37:58.368 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:37:58.368 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:37:58.369 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:37:58.369 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:37:58.369 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:37:58.370 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:38:04.437 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:38:04.438 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:38:04.438 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:38:04.439 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:38:04.439 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:38:04.439 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:39:21.846 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:39:21.846 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:39:21.848 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:39:21.849 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:39:21.849 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:39:21.850 [http-nio-8080-exec-10] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:39:23.304 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:39:23.304 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:39:23.305 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:39:23.306 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:39:23.306 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:39:23.306 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:39:27.838 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 16:39:27.838 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 16:39:27.839 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 16:39:27.839 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:39:27.839 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:39:27.840 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:39:27.915 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 16:39:27.916 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 16:39:27.915(Timestamp)
+2023-04-24 16:39:27.920 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 16:39:27.933 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:39:27.934 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:39:27.934 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:39:27.935 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:39:27.935 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:39:27.935 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 16:39:32.526 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 16:39:32.526 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 16:39:32.527 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 16:39:32.528 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 16:39:32.528 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 16:39:32.529 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:21:08.962 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:21:08.963 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:21:08.966 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:21:08.967 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:21:08.967 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:21:08.984 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:21:11.806 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:21:11.806 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:21:11.809 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:21:11.811 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:21:11.811 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:21:11.813 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:21:34.517 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:21:34.517 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:21:34.519 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:21:34.522 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:21:34.523 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:21:34.523 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:21:35.976 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:21:35.976 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:21:35.977 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:21:35.978 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:21:35.978 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:21:35.979 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:22:37.786 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:22:37.786 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:22:37.788 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:22:37.789 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:22:37.789 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:22:37.790 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:23:10.022 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:23:10.023 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:23:10.024 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:23:10.026 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:23:10.026 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:23:10.027 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:25:24.765 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 18:25:24.766 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 18:25:24.767 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 18:25:24.767 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:25:24.767 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:25:24.768 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:25:24.844 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 18:25:24.844 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 18:25:24.843(Timestamp)
+2023-04-24 18:25:24.847 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 18:25:24.864 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:25:24.864 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:25:24.866 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:25:24.866 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:25:24.866 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:25:24.867 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:28:19.599 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 18:28:19.599 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 18:28:19.602 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 18:28:19.603 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:28:19.603 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:28:19.604 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:28:19.680 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 18:28:19.680 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-24 18:28:19.68(Timestamp)
+2023-04-24 18:28:19.684 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 18:28:19.704 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:28:19.704 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:28:19.706 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:28:19.706 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:28:19.706 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:28:19.707 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:29:15.877 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:29:15.877 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:29:15.879 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:29:15.881 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:29:15.881 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:29:15.882 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:29:17.170 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:29:17.171 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:29:17.172 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:29:17.173 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:29:17.173 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:29:17.174 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:30:14.825 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:30:14.825 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:30:14.826 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:30:14.827 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:30:14.827 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:30:14.828 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 18:30:16.301 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 18:30:16.301 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 18:30:16.302 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 18:30:16.303 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 18:30:16.303 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 18:30:16.304 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 20:59:29.112 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 20:59:31.140 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 21:00:32.123 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:00:32.140 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:00:32.167 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:00:32.177 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:00:32.178 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:00:32.181 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:00:37.033 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:00:37.037 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:00:37.071 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:00:37.074 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:00:37.075 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:00:37.078 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:01:19.461 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:01:19.462 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:01:19.466 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:01:19.467 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:01:19.468 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:01:19.469 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:01:56.827 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:01:56.828 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:01:56.830 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:01:56.831 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:01:56.831 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:01:56.832 [http-nio-8080-exec-8] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:02:00.446 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:02:00.447 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:02:00.451 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:02:00.452 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:02:00.452 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:02:00.454 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:02:44.407 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:02:44.407 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:02:44.410 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:02:44.411 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:02:44.411 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:02:44.412 [http-nio-8080-exec-11] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:13:13.823 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:13:13.824 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:13:13.828 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:13:13.830 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:13:13.830 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:13:13.832 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:13:32.756 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:13:32.757 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:13:32.760 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:13:32.762 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:13:32.763 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:13:32.765 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:17:32.292 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 21:17:34.156 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 21:22:44.273 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:22:44.297 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:22:44.322 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:22:44.330 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:22:44.331 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:22:44.334 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:23:07.971 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 21:23:07.972 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 21:23:07.974 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 21:23:07.975 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:23:07.975 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:23:07.977 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:23:08.059 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 21:23:08.060 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 21:23:08.057(Timestamp)
+2023-04-24 21:23:08.065 [http-nio-8080-exec-21] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 21:23:08.105 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:23:08.105 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:23:08.112 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:23:08.113 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:23:08.113 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:23:08.114 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:24:23.120 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:24:23.121 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:24:23.125 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:24:23.127 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:24:23.127 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:24:23.129 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:26:02.194 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:26:02.195 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:26:02.198 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:26:02.199 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:26:02.199 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:26:02.200 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:26:05.938 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:26:05.938 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:26:05.944 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:26:05.946 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:26:05.946 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:26:05.947 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:26:24.289 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:26:24.290 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:26:24.293 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:26:24.295 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:26:24.296 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:26:24.297 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:27:44.719 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-24 21:27:46.662 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-24 21:27:57.595 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:27:57.616 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:27:57.636 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:27:57.644 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:27:57.644 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:27:57.646 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:28:03.427 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-24 21:28:03.428 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-24 21:28:03.430 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-24 21:28:03.432 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:28:03.432 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:28:03.433 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:28:03.514 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-24 21:28:03.515 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-24 21:28:03.512(Timestamp)
+2023-04-24 21:28:03.520 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-24 21:28:03.558 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:28:03.559 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:28:03.565 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:28:03.566 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:28:03.566 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:28:03.567 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-24 21:28:06.730 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-24 21:28:06.732 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-24 21:28:06.740 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-24 21:28:06.742 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-24 21:28:06.743 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-24 21:28:06.745 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
