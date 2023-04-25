@@ -1,5 +1,21 @@
-const tabKey = 'tabList'
+const TokenKey = 'accessToken'
 
+// 获取token
+export function getToken() {
+  return localStorage.getItem(TokenKey)
+}
+
+// 设置token
+export function setToken(token) {
+  localStorage.setItem(TokenKey, token)
+}
+
+// 清除token
+export function removeToken() {
+  localStorage.removeItem(TokenKey)
+}
+
+const tabKey = 'tabList'
 // 获取tabList
 export function getTabList() {
   return JSON.parse(localStorage.getItem(tabKey))

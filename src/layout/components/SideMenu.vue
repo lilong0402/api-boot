@@ -1,6 +1,4 @@
 <script setup>
-import { useAdminStore } from '../../stores'
-
 const store = useAdminStore()
 const { sideWidth, menus } = storeToRefs(store)
 const router = useRouter()
@@ -9,7 +7,7 @@ const route = useRoute()
 const defaultActive = ref(route.path)
 // 是否折叠
 const isCollapse = computed(() => sideWidth === '220px')
-const handleSelect = (e) => {
+const handleSelect = e => {
   router.push(e)
 }
 </script>

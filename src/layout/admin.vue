@@ -1,28 +1,14 @@
-<script setup>
-import { useAdminStore } from '../stores'
-
-import sidemenu from './components/SideMenu.vue'
-import topnav from './components/TopNav.vue'
-import breadcrumbs from './components/BreadCrumbs.vue'
-
-const store = useAdminStore()
-
-const { sideWidth } = storeToRefs(store)
-</script>
-
 <template>
   <el-container>
     <el-header>
-      <topnav />
+      <top-nav />
     </el-header>
-
     <el-container>
       <el-aside :style="{ width: sideWidth }">
-        <sidemenu />
+        <side-menu />
       </el-aside>
-
       <el-main>
-        <breadcrumbs />
+        <bread-crumbs />
         <router-view v-slot="{ Component }">
           <transition name="fade">
             <keep-alive :max="10">
@@ -35,6 +21,10 @@ const { sideWidth } = storeToRefs(store)
   </el-container>
 </template>
 
+<script setup>
+const store = useAdminStore()
+const { sideWidth } = storeToRefs(store)
+</script>
 <style scoped>
 .el-main {
   @apply w-full h-screen text-left;

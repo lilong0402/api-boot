@@ -17,6 +17,7 @@ export default defineConfig({
     vue(),
     WindiCSS(),
     AutoImport({
+      // 自动导入
       imports: [
         'vue',
         'vue-router',
@@ -24,9 +25,17 @@ export default defineConfig({
         'pinia',
         {
           'vue-router': ['onBeforeRouteLeave'],
-          '@/utils/tools': ['toast', 'showModal'],
-          '@/utils/storage': ['getToken', 'setToken', 'removeToken'],
-          '@/api/auth': ['login', 'logout', 'getCaptcha']
+          '@/utils/tool': ['toast', 'showModal','showFullLoading','hideFullLoading'],
+          '@/utils/storage': ['getToken', 'setToken', 'removeToken',"getTabList","setTabList","removeTabList"],
+          '@/api/auth': ['login', 'logout', 'getCaptcha'],
+          '@/api/admin': ['getInfo','rePassword'],
+          '@/api/notice': ['getNoticePage','saveNotice','updateNotice','deleteNotice'],
+          '@/stores': ['useAdminStore'],
+          '@/hooks/useAuth': ['useAccountLogin', 'useLogout'],
+          '@/hooks/useAdmin':['usePassword'],
+          '@/hooks/useBreadCrumbs':['useBreadCrumbs'],
+          '@/hooks/useNotice':['useNotice'],
+          '@/hooks/useCrud':['useInitTable','useInitForm'],
         }
       ],
       // 指定文件夹位置， 加 /** 可遍历子目录
@@ -38,7 +47,7 @@ export default defineConfig({
     }),
     Components({
       // 指定组件所在文件夹的位置，默认是 src/components，可以自行扩充
-      dirs: ['src/components'],
+      dirs: ['src/components','src/layout/components/'],
       // 解析 ElementPlus
       resolvers: [ElementPlusResolver(), IconResolver({ enabledCollections: ['ep'] })],
       // 组件的有效文件扩展名

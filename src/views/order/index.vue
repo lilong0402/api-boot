@@ -1,7 +1,6 @@
-<script setup></script>
-
 <template>
-	<div>订单管理</div>
+  <div></div>
 </template>
 
+<script setup></script>
 <style scoped></style>

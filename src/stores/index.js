@@ -1,11 +1,9 @@
-import {getInfo} from '../api/admin'
-import { removeTabList } from '../utils/storage'
 export const useAdminStore = defineStore('admin', {
   state: () => ({
     adminInfo: {},
     menus: [],
     authorities: [],
-    sideWidth: '220px',
+    sideWidth: '220px'
   }),
   actions: {
     // 登录
@@ -39,7 +37,9 @@ export const useAdminStore = defineStore('admin', {
       return new Promise((resolve, reject) => {
         logout()
           .then(() => {
+            //删除token
             removeToken()
+            // 删除面包屑数据
             removeTabList()
             this.adminInfo = {}
             resolve()
@@ -48,7 +48,9 @@ export const useAdminStore = defineStore('admin', {
       })
     },
     handleSideWidth() {
+      // console.log("点击了....")
       this.sideWidth = this.sideWidth === '220px' ? '64px' : '220px'
-    },
+      // console.log(this.sideWidth)
+    }
   }
 })

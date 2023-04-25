@@ -6,24 +6,21 @@ import {router} from './router'
 
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-import './assets/main.css'
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-
 
 const app = createApp(App)
-
-for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-    app.component(key, component)
-  }
 
 app.use(createPinia())
 app.use(router)
 app.use(ElementPlus)
 
-import 'nprogress/nprogress.css'
-
 import 'virtual:windi.css'
-
-import permission from '@/directive/permission.js'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
+import './permission'
+// loading
+import 'nprogress/nprogress.css'
+import permission from '@/directives/permission'
 app.use(permission)
 app.mount('#app')

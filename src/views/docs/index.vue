@@ -1,9 +1,6 @@
-<script setup></script>
-
 <template>
-	<div>
-		<iframe src="http://localhost:8080/doc.html" class="w-full h-screen"></iframe>
-	</div>
+  <div></div>
 </template>
 
+<script setup></script>
 <style scoped></style>

@@ -1,7 +1,6 @@
-<script setup></script>
-
 <template>
-	<div>菜单管理</div>
+  <div></div>
 </template>
 
+<script setup></script>
 <style scoped></style>

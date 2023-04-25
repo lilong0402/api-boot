@@ -1,42 +1,35 @@
 <script setup>
-import { useAdminStore } from '../../stores'
-import { useLogout } from '../../hook/useAuth'
-import { usePassword } from '../../hook/useAdmin'
-
 const store = useAdminStore()
-const { adminInfo, sideWidth, handleSideWidth } = storeToRefs(store)
-
-const { ifFullscreen, toggle } = useFullscreen()
-const handleRefresh = () => location.reload()
+const { adminInfo } = storeToRefs(store)
+const { sideWidth } = storeToRefs(store)
+const { handleSideWidth } = store
 const { handleLogout } = useLogout()
-// const {formDrawerRef,form,rules,forRe}
-const { formDrawerRef, form, rules, formRef, onSubmit, openRepasswordForm } = usePassword()
+const { formDrawerRef, form, rules, formRef, openRepasswordForm, onSubmit } = usePassword()
+const { isFullscreen, toggle } = useFullscreen()
+const handleRefresh = () => location.reload()
 </script>
 
 <template>
   <div class="f-header v-center">
     <RouterLink to="/">
-      <div class="f-center text-[1.5rem] transition-all duration-500" :style="{ width: sideWidth }">
+      <div class="f-center text-[1.5rem] transition-all duration-500" style="width: sideWidth">
         <IEpElementPlus class="mr-3" />
-        <span v-show="sideWidth" class="text-2xl">极客空间</span>
+        <span v-show="sideWidth === '220px'">极客空间</span>
       </div>
     </RouterLink>
+
     <div @click="handleSideWidth" class="icon v-center">
-      <IEpFold v-if="sideWidth === '220px'"></IEpFold>
-      <IEpExpand v-else></IEpExpand>
+      <IEpFold v-if="sideWidth === '220px'" />
+      <IEpExpand v-else />
     </div>
 
     <div class="ml-auto v-center">
-      <IEpRefresh class="icon" @click="handleRefresh"></IEpRefresh>
-    </div>
-
-    <div class="ml-auto v-center">
-      <IEpRefresh class="icon" />
+      <IEpRefresh class="icon" @click="handleRefresh" />
       <div @click="toggle" class="icon v-center">
-        <IEpFullScreen v-if="!isFullscreen"></IEpFullScreen>
-        <IEpAim v-else></IEpAim>
+        <IEpFullScreen v-if="!isFullscreen" />
+        <IEpAim v-else />
       </div>
-      <IEpFullScreen class="icon" />
+
       <IEpPrinter class="icon" />
       <IEpSetting class="icon" />
 
@@ -48,36 +41,13 @@ const { formDrawerRef, form, rules, formRef, onSubmit, openRepasswordForm } = us
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item @click="openRepasswordForm">修改密码</el-dropdown-item>
+            <el-dropdown-item>修改密码</el-dropdown-item>
             <el-dropdown-item @click="handleLogout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
     </div>
   </div>
-  <FormDrawer ref="formDrawerRef" title="修改密码" destroyOnClose @submit="onSubmit">
-    <el-form ref="formRef" :rules="rules" :model="form" label-width="80px">
-      <el-form-item prop="oldPassword" label="旧密码">
-        <el-input v-model="form.oldPassword" placeholder="请输入旧密码"></el-input>
-      </el-form-item>
-      <el-form-item prop="newPassword" label="新密码">
-        <el-input
-          type="password"
-          v-model="form.newPassword"
-          placeholder="请输入密码"
-          show-password
-        ></el-input>
-      </el-form-item>
-      <el-form-item prop="rePassword" label="确认密码">
-        <el-input
-          type="password"
-          v-model="form.rePassword"
-          placeholder="请输入确认密码"
-          show-password
-        ></el-input>
-      </el-form-item>
-    </el-form>
-  </FormDrawer>
 </template>
 
 <style scoped>
