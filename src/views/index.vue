@@ -61,5 +61,11 @@ setTimeout(() => {
         </el-card>
       </el-col>
     </el-row>
+    <el-row :gutter="20" class="mt-5">
+      <el-col :span="12">
+        <IndexChart></IndexChart>
+      </el-col>
+      <el-col :span="12"></el-col>
+    </el-row>
   </div>
 </template>
