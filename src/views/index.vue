@@ -70,6 +70,9 @@ getStatistics3().then((res) => {
         </el-card>
       </el-col>
     </el-row>
+
+    <IndexNav />
+
     <el-row :gutter="20" class="mt-5">
       <el-col :span="12">
         <IndexChart></IndexChart>
