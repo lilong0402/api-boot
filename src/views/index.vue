@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { getStatistics1 } from '../api'
+// import { CountTo } from '../components/CountTo.vue'
 
 // const msg = ref('测试自动导入')
 const panels = ref([])
@@ -49,7 +50,8 @@ setTimeout(() => {
             </div>
           </template>
           <span class="text-3xl font-bold text-gray-500">
-            {{ item.value }}
+            <!-- {{ item.value }} -->
+            <CountTo :value="item.value"></CountTo>
           </span>
           <el-divider></el-divider>
           <div class="flex justify-between text-sm text-gray-500">
