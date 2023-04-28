@@ -3,4 +3,20 @@
 
 <mapper namespace="top.lilong.rbac.dao.SysUserDao">
 
+    <select id="getList" resultType="top.lilong.rbac.entity.SysUserEntity">
+        SELECT t1.*
+        FROM sys_user t1 WHERE t1.super_admin = 0 AND t1.deleted = 0
+        <if test="username != null and mobile.trim() != ''">
+            AND t1.mobile = #{mobile}
+        </if>
+        <if test="gender != null">
+            AND t1.gender = #{gender}
+        </if>
+    </select>
+    <select id="getById" resultType="top.lilong.rbac.entity.SysUserEntity">
+        SELECT t1.*
+        FROM sys_user t1
+        WHERE t1.id = #{id}
+        AND t1.deleted = 0
+    </select>
 </mapper>
