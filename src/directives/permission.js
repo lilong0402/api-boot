@@ -3,7 +3,7 @@ function hasPermission(value, el = false) {
   if (!Array.isArray(value)) {
     throw new Error(`需要配置权限，例如 v-permission="['sys:notice:page']"`)
   }
-  const hasAuth = value.findIndex(v => store.authorities.includes(v)) != -1
+  const hasAuth = value.findIndex((v) => store.authorities.includes(v)) != -1
   if (el && !hasAuth) {
     el.parentNode && el.parentNode.removeChild(el)
   }
@@ -15,7 +15,7 @@ export default {
     app.directive('permission', {
       mounted(el, binding) {
         hasPermission(binding.value, el)
-      }
+      },
     })
-  }
+  },
 }

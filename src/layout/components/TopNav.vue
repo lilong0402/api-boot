@@ -41,13 +41,36 @@ const handleRefresh = () => location.reload()
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item>修改密码</el-dropdown-item>
+            <el-dropdown-item @click="openRepasswordForm">修改密码</el-dropdown-item>
             <el-dropdown-item @click="handleLogout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
     </div>
   </div>
+  <FormDrawer ref="formDrawerRef" title="修改密码" destrayOnClose @submit="onSubmit">
+    <el-form ref="formRef" :rules="rules" :model="form" label-width="80px">
+      <el-form-item prop="oldPassword" label="旧密码">
+        <el-input v-model="form.oldPassword" placeholder="请输入旧密码"></el-input>
+      </el-form-item>
+      <el-form-item prop="newPassword" label="新密码">
+        <el-input
+          type="password"
+          v-model="form.newPassword"
+          placeholder="请输入密码"
+          show-password
+        ></el-input>
+      </el-form-item>
+      <el-form-item prop="newPassword" label="确认密码">
+        <el-input
+          type="password"
+          v-model="form.rePassword"
+          placeholder="请输入确认密码"
+          show-password
+        ></el-input>
+      </el-form-item>
+    </el-form>
+  </FormDrawer>
 </template>
 
 <style scoped>

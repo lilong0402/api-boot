@@ -25,6 +25,7 @@ export function useNotice() {
       .then(res => {
         tableData.value = res.list
         total.value = res.total
+        console.log(tableData.value)
       })
       .finally(() => {
         loading.value = false

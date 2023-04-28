@@ -46,7 +46,7 @@ const iconNavs = [
     icon: 'picture',
     color: 'text-rose-500',
     title: '日志管理',
-    path: '/lpg/index'
+    path: '/l0g/index'
   }
 ]
 </script>
@@ -55,10 +55,12 @@ const iconNavs = [
   <el-row :gutter="20" class="mt-5">
     <el-col :span="3" v-for="(item, index) in iconNavs" :key="index">
       <el-card class="shadow hover:shadow-xl" @click="$router.push(item.path)">
-        <el-icon :size="16" :class="item.color">
-          <component :is="item.icon"></component>
-        </el-icon>
-        <span class="text-sm mt-2">{{ item.title }}</span>
+        <div class="f-col-center cursor-pointer">
+          <el-icon :size="16" :class="item.color">
+            <component :is="item.icon"></component>
+          </el-icon>
+          <span class="text-sm mt-3 ml-2">{{ item.title }}</span>
+        </div>
       </el-card>
     </el-col>
   </el-row>
