@@ -1,6 +1,609 @@
-2023-04-25 13:29:24.638 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
-2023-04-25 13:29:26.630 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
-2023-04-25 13:51:51.223 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
-2023-04-25 13:51:52.991 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
-2023-04-25 13:52:29.216 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
-2023-04-25 13:52:31.301 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 07:59:14.947 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 07:59:17.082 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:03:00.688 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 10:03:02.650 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:29:22.591 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 10:29:24.559 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:29:36.314 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 10:29:36.332 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 10:29:36.359 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 10:29:36.365 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:29:36.365 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:29:36.370 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:29:36.453 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 10:29:36.454 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-28 10:29:36.451(Timestamp)
+2023-04-28 10:29:36.461 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 10:29:38.230 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:29:38.230 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:29:38.235 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:29:38.238 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:29:38.238 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:29:38.239 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:34:18.305 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:34:18.305 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:34:18.311 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:34:18.312 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:34:18.312 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:34:18.314 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:36:29.248 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:36:29.248 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:36:29.251 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:36:29.254 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:36:29.254 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:36:29.256 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:38:41.777 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:38:41.778 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:38:41.782 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:38:41.785 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:38:41.785 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:38:41.787 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:39:37.620 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:39:37.622 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:39:37.626 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:39:37.627 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:39:37.628 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:39:37.629 [http-nio-8080-exec-15] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:39:56.699 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:39:56.700 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:39:56.705 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:39:56.707 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:39:56.709 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:39:56.712 [http-nio-8080-exec-18] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:41:31.839 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 10:41:33.784 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:41:43.753 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 10:41:45.611 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:42:00.390 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:42:00.408 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:42:00.427 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:42:00.435 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:42:00.436 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:42:00.438 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 10:42:44.935 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 10:42:46.866 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 10:42:54.914 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 10:42:54.931 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 10:42:54.950 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 10:42:54.958 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 10:42:54.958 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 10:42:54.961 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:06:37.904 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 11:06:39.820 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 11:06:49.724 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:06:49.741 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:06:49.761 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:06:49.769 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:06:49.769 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:06:49.772 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:09:17.659 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:09:17.660 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:09:17.672 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:09:17.673 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:09:17.674 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:09:17.676 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:24:41.348 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:24:41.349 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:24:41.354 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:24:41.356 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:24:41.357 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:24:41.361 [http-nio-8080-exec-19] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:25:43.775 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:25:43.778 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:25:43.785 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:25:43.786 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:25:43.786 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:25:43.787 [http-nio-8080-exec-24] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:31:36.307 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 11:31:38.204 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 11:31:46.702 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:31:46.733 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:31:46.758 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:31:46.770 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:31:46.770 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:31:46.774 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:33:24.143 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 11:33:26.013 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 11:33:34.320 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:33:34.336 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:33:34.356 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:33:34.364 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:33:34.364 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:33:34.367 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 11:33:36.251 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:33:36.252 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:33:36.264 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 11:33:36.266 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:33:36.266 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:33:36.268 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 13:24:37.129 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 13:24:39.046 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 13:25:19.236 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 13:25:19.253 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 13:25:19.275 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 13:25:19.282 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 13:25:19.283 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 13:25:19.285 [http-nio-8080-exec-9] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 13:26:32.049 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 13:26:32.050 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 13:26:32.057 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 13:26:32.058 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 13:26:32.058 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 13:26:32.060 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 13:37:31.027 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 13:37:33.019 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 13:37:45.064 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 13:37:45.089 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 13:37:45.116 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 13:37:45.127 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 13:37:45.128 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 13:37:45.132 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 13:59:28.366 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 13:59:30.466 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 13:59:53.831 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 13:59:53.849 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 13:59:53.867 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 13:59:53.873 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 13:59:53.874 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 13:59:53.876 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 13:59:53.959 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 13:59:53.960 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-28 13:59:53.957(Timestamp)
+2023-04-28 13:59:53.966 [http-nio-8080-exec-5] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 13:59:54.004 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 13:59:54.004 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 13:59:54.008 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 13:59:54.011 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 13:59:54.011 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 13:59:54.012 [http-nio-8080-exec-6] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:04:13.357 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:04:13.358 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:04:13.371 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:04:13.372 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:04:13.372 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:04:13.373 [http-nio-8080-exec-17] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:07:45.908 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 14:07:47.810 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 14:08:01.344 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:08:01.360 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:08:01.378 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:08:01.386 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:08:01.386 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:08:01.389 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:10:20.097 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:10:20.098 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:10:20.112 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:10:20.114 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:10:20.115 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:10:20.119 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:10:37.695 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:10:37.701 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:10:37.705 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:10:37.706 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:10:37.706 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:10:37.708 [http-nio-8080-exec-22] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:12:29.276 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 14:12:32.663 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 14:12:41.784 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:12:41.805 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:12:41.832 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:12:41.899 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:12:41.899 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:12:41.903 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:12:42.456 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:12:42.457 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:12:42.465 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:12:42.469 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:12:42.470 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:12:42.478 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:13:24.217 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:13:24.218 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:13:24.219 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:13:24.220 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:13:24.221 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:13:24.222 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:13:25.942 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:13:25.942 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:13:25.943 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:13:25.944 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:13:25.944 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:13:25.947 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:32:54.855 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:32:54.856 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:32:54.864 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:32:54.866 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:32:54.866 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:32:54.868 [http-nio-8080-exec-26] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:32:55.010 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:32:55.011 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:32:55.012 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:32:55.014 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:32:55.014 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:32:55.018 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:33:00.138 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:00.138 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:00.139 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:00.141 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:33:00.141 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:33:00.143 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:33:15.263 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:33:15.264 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaaa(String), aa(String), 10000(Long), 2023-04-28 14:33:15.261(Timestamp), 10000(Long), 2023-04-28 14:33:15.261(Timestamp), 0(Integer)
+2023-04-28 14:33:15.269 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:33:15.309 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:15.310 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:15.311 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:15.314 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:33:15.315 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:33:15.320 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:33:17.473 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:17.473 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:17.474 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:17.475 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:33:17.476 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:33:17.477 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 14:33:25.619 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:33:25.619 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters:  bbb(String), bb(String), 10000(Long), 2023-04-28 14:33:25.619(Timestamp), 10000(Long), 2023-04-28 14:33:25.619(Timestamp), 0(Integer)
+2023-04-28 14:33:25.620 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:33:25.653 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:25.653 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:25.654 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:25.655 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:33:25.655 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:33:25.657 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:33:27.615 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:27.615 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:27.616 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:27.618 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:33:27.618 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:33:27.620 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:33:55.136 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:33:55.136 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: ccc(String), cc(String), 10000(Long), 2023-04-28 14:33:55.135(Timestamp), 10000(Long), 2023-04-28 14:33:55.135(Timestamp), 0(Integer)
+2023-04-28 14:33:55.137 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:33:55.172 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:33:55.173 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:33:55.173 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:33:55.174 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:33:55.174 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:33:55.176 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:38:21.859 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:38:21.860 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:38:21.864 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:38:21.865 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:38:21.865 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:38:21.866 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:38:22.033 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:38:22.033 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:38:22.034 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:38:22.036 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:38:22.036 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:38:22.039 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:38:25.546 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:38:25.547 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:38:25.547 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:38:25.548 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:38:25.548 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:38:25.550 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 14:38:32.912 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:38:32.913 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:38:32.899(Timestamp), 112(Long)
+2023-04-28 14:38:32.913 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:38:32.913(Timestamp), 111(Long)
+2023-04-28 14:38:32.913 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:38:32.913(Timestamp), 110(Long)
+2023-04-28 14:43:23.810 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:43:23.811 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:43:23.817 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:43:23.818 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:43:23.819 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:43:23.821 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:43:23.965 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:43:23.965 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:43:23.966 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:43:23.966 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:43:23.967 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:43:23.968 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:43:26.554 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:43:26.554 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:43:26.555 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:43:26.556 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:43:26.556 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:43:26.557 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:43:57.571 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:43:57.572 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaaa(String), aa(String), 10000(Long), 2023-04-28 14:43:57.571(Timestamp), 10000(Long), 2023-04-28 14:43:57.571(Timestamp), 0(Integer)
+2023-04-28 14:43:57.573 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:43:57.606 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:43:57.606 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:43:57.607 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:43:57.607 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:43:57.607 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:43:57.608 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:45:24.210 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:45:24.210 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:45:24.211 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:45:24.211 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:45:24.211 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:45:24.212 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 14:45:34.021 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:45:34.022 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: bbbb(String), bbb(String), 10000(Long), 2023-04-28 14:45:34.021(Timestamp), 10000(Long), 2023-04-28 14:45:34.021(Timestamp), 0(Integer)
+2023-04-28 14:45:34.024 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:45:34.063 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:45:34.064 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:45:34.065 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:45:34.066 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:45:34.066 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:45:34.068 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:45:35.927 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:45:35.927 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:45:35.929 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:45:35.930 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:45:35.930 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:45:35.938 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:45:41.876 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:45:41.876 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:45:41.875(Timestamp), 113(Long)
+2023-04-28 14:45:41.877 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:45:41.877(Timestamp), 114(Long)
+2023-04-28 14:45:44.153 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:45:44.154 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:45:44.158 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:45:44.160 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:45:44.161 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:45:44.162 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:45:44.302 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:45:44.302 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:45:44.303 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:45:44.304 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:45:44.304 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:45:44.306 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:45:45.830 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:45:45.831 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:45:45.832 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:45:45.832 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:45:45.832 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:45:45.833 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:50:06.079 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:06.079 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:06.080 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:06.083 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:50:06.083 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:50:06.086 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:50:11.104 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:50:11.105 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:50:11.108 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:50:11.109 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:50:11.110 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:50:11.112 [http-nio-8080-exec-30] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:50:11.244 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:11.244 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:11.245 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:11.246 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:50:11.246 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:50:11.248 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:50:12.874 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:12.875 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:12.876 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:12.876 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:50:12.877 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:50:12.878 [http-nio-8080-exec-2] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:50:23.537 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:50:23.537 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaa(String), aa(String), 10000(Long), 2023-04-28 14:50:23.536(Timestamp), 10000(Long), 2023-04-28 14:50:23.536(Timestamp), 0(Integer)
+2023-04-28 14:50:23.539 [http-nio-8080-exec-12] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:50:23.575 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:23.576 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:23.577 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:23.578 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:50:23.579 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:50:23.580 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:50:32.346 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:50:32.347 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: bbbb(String), bbb(String), 10000(Long), 2023-04-28 14:50:32.346(Timestamp), 10000(Long), 2023-04-28 14:50:32.346(Timestamp), 0(Integer)
+2023-04-28 14:50:32.347 [http-nio-8080-exec-11] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:50:32.383 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:32.383 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:32.384 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:32.384 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:50:32.385 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:50:32.386 [http-nio-8080-exec-19] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:50:34.539 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:34.539 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:34.539 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:34.540 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:50:34.540 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:50:34.542 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:50:39.624 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:50:39.624 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:50:39.622(Timestamp), 115(Long)
+2023-04-28 14:50:39.624 [http-nio-8080-exec-20] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:50:39.624(Timestamp), 116(Long)
+2023-04-28 14:50:39.649 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:50:39.649 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:50:39.649 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:50:39.650 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:50:39.650 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:50:39.652 [http-nio-8080-exec-6] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:51:17.288 [http-nio-8080-exec-18] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:51:17.289 [http-nio-8080-exec-18] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaaa(String), aaa(String), 10000(Long), 2023-04-28 14:51:17.287(Timestamp), 10000(Long), 2023-04-28 14:51:17.287(Timestamp), 0(Integer)
+2023-04-28 14:51:17.289 [http-nio-8080-exec-18] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:51:17.319 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:51:17.319 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:51:17.320 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:51:17.320 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:51:17.321 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:51:17.321 [http-nio-8080-exec-17] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:52:14.356 [http-nio-8080-exec-23] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:52:14.357 [http-nio-8080-exec-23] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: bbbb(String), bb(String), 10000(Long), 2023-04-28 14:52:14.356(Timestamp), 10000(Long), 2023-04-28 14:52:14.356(Timestamp), 0(Integer)
+2023-04-28 14:52:14.357 [http-nio-8080-exec-23] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:52:14.396 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:52:14.396 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:52:14.397 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:52:14.397 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:52:14.398 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:52:14.399 [http-nio-8080-exec-25] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:52:17.200 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:52:17.201 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:52:17.201 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:52:17.202 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:52:17.202 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:52:17.203 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:52:27.925 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:52:27.925 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: vcc(String), cc(String), 10000(Long), 2023-04-28 14:52:27.924(Timestamp), 10000(Long), 2023-04-28 14:52:27.924(Timestamp), 0(Integer)
+2023-04-28 14:52:27.928 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:52:27.961 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:52:27.961 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:52:27.962 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:52:27.963 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:52:27.963 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:52:27.964 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:54:54.323 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:54:54.323 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:54:54.324 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:54:54.324 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:54:54.325 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:54:54.326 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 14:54:58.150 [http-nio-8080-exec-27] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:54:58.151 [http-nio-8080-exec-27] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:54:58.149(Timestamp), 119(Long)
+2023-04-28 14:54:58.164 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:54:58.164 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:54:58.164 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:54:58.166 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:54:58.166 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:54:58.167 [http-nio-8080-exec-15] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:57:12.590 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:12.591 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:12.591 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:12.592 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:57:12.592 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:57:12.592 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:57:18.856 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:18.856 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:18.857 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:18.857 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:57:18.858 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:57:18.858 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 14:57:23.817 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:57:23.817 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:57:23.815(Timestamp), 118(Long)
+2023-04-28 14:57:26.062 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:57:26.062 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:57:26.065 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:57:26.066 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:57:26.066 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:57:26.068 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:57:26.200 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:26.200 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:26.201 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:26.202 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:57:26.202 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:57:26.203 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:57:27.281 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:27.282 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:27.283 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:27.284 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:57:27.284 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:57:27.284 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 14:57:31.678 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:57:31.678 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:57:31.676(Timestamp), 117(Long)
+2023-04-28 14:57:36.530 [http-nio-8080-exec-23] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:57:36.530 [http-nio-8080-exec-23] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:57:36.528(Timestamp), 117(Long)
+2023-04-28 14:57:38.908 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:57:38.908 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:57:38.910 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:57:38.912 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:57:38.912 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:57:38.914 [http-nio-8080-exec-25] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:57:39.037 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:39.037 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:39.038 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:39.038 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:57:39.038 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:57:39.039 [http-nio-8080-exec-26] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:57:40.793 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:57:40.794 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:57:40.794 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:57:40.795 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:57:40.796 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:57:40.797 [http-nio-8080-exec-30] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:58:09.610 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:09.610 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:09.611 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:09.611 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:58:09.611 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:58:09.612 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:58:12.726 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:58:12.726 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:58:12.727 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-28 14:58:12.728 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:58:12.729 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:58:12.730 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-28 14:58:12.847 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:12.847 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:12.848 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:12.849 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:58:12.850 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:58:12.851 [http-nio-8080-exec-4] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:58:17.440 [http-nio-8080-exec-27] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:58:17.441 [http-nio-8080-exec-27] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaaa(String), aa(String), 10000(Long), 2023-04-28 14:58:17.439(Timestamp), 10000(Long), 2023-04-28 14:58:17.439(Timestamp), 0(Integer)
+2023-04-28 14:58:17.444 [http-nio-8080-exec-27] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:58:17.478 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:17.479 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:17.479 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:17.481 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:58:17.481 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:58:17.482 [http-nio-8080-exec-22] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:58:18.770 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:18.771 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:18.771 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:18.772 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:58:18.772 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:58:18.773 [http-nio-8080-exec-7] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 14:58:23.242 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:58:23.243 [http-nio-8080-exec-5] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:58:23.241(Timestamp), 120(Long)
+2023-04-28 14:58:23.268 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:23.268 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:23.269 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:23.270 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:58:23.270 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:58:23.271 [http-nio-8080-exec-16] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:58:23.277 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:23.277 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:23.278 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:23.279 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:58:23.279 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:58:23.280 [http-nio-8080-exec-9] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 14:58:32.908 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:58:32.908 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: aaaaaa(String), aaa(String), 10000(Long), 2023-04-28 14:58:32.907(Timestamp), 10000(Long), 2023-04-28 14:58:32.907(Timestamp), 0(Integer)
+2023-04-28 14:58:32.910 [http-nio-8080-exec-13] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:58:32.938 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:32.938 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:32.939 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:32.939 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:58:32.940 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:58:32.941 [http-nio-8080-exec-10] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:58:39.802 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:58:39.803 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: bbbb(String), bbb(String), 10000(Long), 2023-04-28 14:58:39.802(Timestamp), 10000(Long), 2023-04-28 14:58:39.802(Timestamp), 0(Integer)
+2023-04-28 14:58:39.803 [http-nio-8080-exec-14] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:58:39.836 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:58:39.836 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:58:39.837 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:58:39.838 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:58:39.838 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:58:39.839 [http-nio-8080-exec-24] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:59:02.051 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.insert - ==>  Preparing: INSERT INTO t_notice ( title, content, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:59:02.051 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.insert - ==> Parameters: ccc(String), cc(String), 10000(Long), 2023-04-28 14:59:02.051(Timestamp), 10000(Long), 2023-04-28 14:59:02.051(Timestamp), 0(Integer)
+2023-04-28 14:59:02.052 [http-nio-8080-exec-8] DEBUG top.lilong.dao.NoticeDao.insert - <==    Updates: 1
+2023-04-28 14:59:02.089 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:59:02.090 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:59:02.090 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:59:02.091 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:59:02.092 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:59:02.093 [http-nio-8080-exec-21] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:59:03.429 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:59:03.429 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:59:03.429 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:59:03.430 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:59:03.430 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:59:03.431 [http-nio-8080-exec-28] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 14:59:08.261 [http-nio-8080-exec-1] DEBUG top.lilong.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 14:59:08.261 [http-nio-8080-exec-1] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:59:08.26(Timestamp), 123(Long)
+2023-04-28 14:59:08.262 [http-nio-8080-exec-1] DEBUG top.lilong.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 14:59:08.262(Timestamp), 122(Long)
+2023-04-28 14:59:08.297 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:59:08.297 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:59:08.298 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:59:08.299 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:59:08.299 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:59:08.300 [http-nio-8080-exec-29] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 14:59:08.306 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:59:08.306 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:59:08.307 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:59:08.307 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 14:59:08.308 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 14:59:08.309 [http-nio-8080-exec-3] DEBUG top.lilong.dao.NoticeDao.selectPage - <==      Total: 4

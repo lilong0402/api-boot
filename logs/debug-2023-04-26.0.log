@@ -1,0 +1,194 @@
+2023-04-26 20:29:29.874 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 20:29:34.494 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 20:30:08.019 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:30:08.037 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:30:08.059 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:30:08.068 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:30:08.068 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:30:08.071 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:33:31.562 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-26 20:33:31.562 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-26 20:33:31.565 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-26 20:33:31.567 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:33:31.567 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:33:31.568 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:33:31.651 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-26 20:33:31.652 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-26 20:33:31.649(Timestamp)
+2023-04-26 20:33:31.656 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-26 20:33:31.686 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:33:31.686 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:33:31.692 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:33:31.693 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:33:31.693 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:33:31.694 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:34:10.550 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:34:10.551 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:34:10.555 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:34:10.557 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:34:10.557 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:34:10.559 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:34:17.360 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:34:17.362 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:34:17.365 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:34:17.366 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:34:17.366 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:34:17.368 [http-nio-8080-exec-20] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:35:44.056 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 20:35:46.078 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 20:35:51.195 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:35:51.211 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:35:51.230 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:35:51.238 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:35:51.238 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:35:51.241 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:37:34.155 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:37:34.155 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:37:34.164 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:37:34.166 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:37:34.166 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:37:34.168 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:42:17.122 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 20:42:18.871 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 20:42:31.714 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:42:31.731 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:42:31.749 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:42:31.756 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:42:31.757 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:42:31.760 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:48:00.304 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:48:00.304 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:48:00.315 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:48:00.316 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:48:00.317 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:48:00.318 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:50:28.552 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 20:50:30.323 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 20:50:51.348 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:50:51.366 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:50:51.389 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:50:51.398 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:50:51.399 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:50:51.402 [http-nio-8080-exec-23] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:51:13.754 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:51:13.755 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:51:13.763 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:51:13.765 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:51:13.766 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:51:13.768 [http-nio-8080-exec-14] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 20:51:50.083 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 20:51:50.084 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 20:51:50.089 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 20:51:50.090 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 20:51:50.091 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 20:51:50.093 [http-nio-8080-exec-27] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:04:14.925 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:04:14.926 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:04:14.930 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:04:14.932 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:04:14.932 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:04:14.934 [http-nio-8080-exec-12] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:07:24.748 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:07:26.645 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:07:33.946 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:07:33.962 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:07:33.981 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:07:33.992 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:07:33.992 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:07:33.995 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:09:05.687 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:09:07.445 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:09:15.348 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:09:15.365 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:09:15.384 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:09:15.392 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:09:15.393 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:09:15.395 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:10:30.974 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:10:33.845 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:10:36.621 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:10:36.638 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:10:36.660 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:10:36.668 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:10:36.668 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:10:36.671 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:11:11.772 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:11:13.462 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:11:19.169 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 ORDER BY sort
+2023-04-26 21:11:19.185 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 
+2023-04-26 21:11:19.216 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 29
+2023-04-26 21:11:19.225 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:11:19.225 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:11:19.228 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:11:42.553 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:11:44.304 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:18:46.013 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:18:47.994 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:19:19.671 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:19:19.691 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:19:19.709 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:19:19.718 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:19:19.718 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:19:19.721 [http-nio-8080-exec-13] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:24:52.278 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:24:54.898 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:25:32.509 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:25:32.527 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:25:32.548 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:25:32.557 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:25:32.557 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:25:32.560 [http-nio-8080-exec-4] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:25:34.017 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:25:34.017 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:25:34.026 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:25:34.028 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:25:34.028 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:25:34.030 [http-nio-8080-exec-7] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:25:46.767 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:25:46.767 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:25:46.772 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:25:46.773 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:25:46.773 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:25:46.774 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:29:13.250 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:29:15.680 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:29:45.071 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:29:45.100 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:29:45.128 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:29:45.140 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:29:45.141 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:29:45.144 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:30:43.608 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-26 21:30:43.609 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-26 21:30:43.612 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-26 21:30:43.613 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:30:43.613 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:30:43.615 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:30:43.717 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-26 21:30:43.718 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58(String), 1(Integer), 0(Integer), 2023-04-26 21:30:43.714(Timestamp)
+2023-04-26 21:30:43.723 [http-nio-8080-exec-29] DEBUG top.lilong.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-26 21:30:43.765 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:30:43.765 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:30:43.772 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:30:43.772 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:30:43.773 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:30:43.774 [http-nio-8080-exec-1] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:34:18.060 [main] DEBUG top.lilong.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-26 21:34:20.551 [main] DEBUG t.lilong.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-26 21:34:31.003 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:34:31.029 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:34:31.054 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:34:31.063 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:34:31.063 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:34:31.066 [http-nio-8080-exec-2] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:34:38.072 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:34:38.074 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:34:38.089 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:34:38.090 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:34:38.091 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:34:38.093 [http-nio-8080-exec-28] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29
+2023-04-26 21:43:28.064 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-26 21:43:28.066 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-26 21:43:28.070 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getMenuList - <==      Total: 9
+2023-04-26 21:43:28.071 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-26 21:43:28.072 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-26 21:43:28.074 [http-nio-8080-exec-3] DEBUG top.lilong.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 29

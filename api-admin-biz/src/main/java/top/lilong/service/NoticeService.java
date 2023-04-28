@@ -47,6 +47,6 @@ public interface NoticeService extends BaseService<NoticeEntity> {
      *
      * @param id id
      */
-    void delete(Long id);
+    void delete(List<Long> id);
 
 }

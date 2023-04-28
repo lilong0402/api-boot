@@ -69,6 +69,7 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         // 忽略授权的地址列表
         List<String> permitList = permitResource.getPermitList();
+        System.out.println(permitList);
         String[] permits = permitList.toArray(new String[0]);
 
         http

@@ -20,8 +20,8 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi userApi() {
         String[] paths = {"/**"};
-        String[] packagedToMatch = {"org.example"};
-        return GroupedOpenApi.builder().group("api boot")
+        String[] packagedToMatch = {"top.lilong"};
+        return GroupedOpenApi.builder().group("api-boot2")
                 .pathsToMatch(paths)
                 .packagesToScan(packagedToMatch).build();
     }

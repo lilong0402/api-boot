@@ -16,7 +16,7 @@ import java.util.Map;
 public interface IndexService {
  List<PanelVO> statistics1();
 
- BarVO statistics2();
+ BarVO statistics2(String type);
 
  Map<String ,List<LabelVO>> statistics3();
 }

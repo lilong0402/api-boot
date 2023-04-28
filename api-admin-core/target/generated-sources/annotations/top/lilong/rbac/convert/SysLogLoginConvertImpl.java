@@ -8,7 +8,7 @@ import top.lilong.rbac.vo.SysLogLoginVO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-04-24T21:27:41+0800",
+    date = "2023-04-28T13:58:36+0800",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.5 (Oracle Corporation)"
 )
 public class SysLogLoginConvertImpl implements SysLogLoginConvert {

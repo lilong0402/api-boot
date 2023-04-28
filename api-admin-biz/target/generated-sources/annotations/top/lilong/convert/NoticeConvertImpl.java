@@ -8,7 +8,7 @@ import top.lilong.vo.NoticeVO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-04-24T10:40:10+0800",
+    date = "2023-04-28T14:12:19+0800",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.5 (Oracle Corporation)"
 )
 public class NoticeConvertImpl implements NoticeConvert {

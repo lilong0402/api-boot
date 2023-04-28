@@ -10,8 +10,6 @@ import top.lilong.rbac.service.IndexService;
 import top.lilong.rbac.vo.BarVO;
 import top.lilong.rbac.vo.LabelVO;
 import top.lilong.rbac.vo.PanelVO;
-
-import java.awt.*;
 import java.util.List;
 import java.util.Map;
 
@@ -33,12 +31,14 @@ public class IndexController {
   List<PanelVO> list = indexService . statistics1();
   return  Result.ok(list);
  }
-
- public Result<BarVO> getStatistics(){
-  BarVO barVO = indexService.statistics2();
+ @GetMapping("statistics2")
+ @Operation(summary = "统计组件2")
+ public Result<BarVO> getStatistics(String type){
+  BarVO barVO = indexService.statistics2(type);
   return Result.ok(barVO);
  }
-
+ @GetMapping("statistics3")
+ @Operation(summary = "统计组件2")
  public Result<Map<String,List<LabelVO>>> getStatistics3(){
   Map<String , List<LabelVO>> map =indexService.statistics3();
   return Result.ok(map);

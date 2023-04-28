@@ -31,23 +31,23 @@ import java.util.List;
 public class NoticeController {
     private final NoticeService noticeService;
 
-
-    @GetMapping("page")
+    @GetMapping("/page")
     @Operation(summary = "通知分页")
     @PreAuthorize("hasAuthority('sys:notice:page')")
     public Result<PageResult<NoticeVO>> page(@ParameterObject @Valid NoticeQuery query) {
         PageResult<NoticeVO> page = noticeService.page(query);
+//        System.out.println(page);
         return Result.ok(page);
     }
 
-    @GetMapping("list")
+    @GetMapping("/list")
     @Operation(summary = "通知列表")
     public Result<List<NoticeVO>> list() {
         List<NoticeVO> list = noticeService.getList();
         return Result.ok(list);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     @Operation(summary = "通知信息")
     @PreAuthorize("hasAuthority('sys:notice:info')")
     public Result<NoticeVO> get(@PathVariable("id") Long id) {
@@ -71,12 +71,21 @@ public class NoticeController {
         return Result.ok();
     }
 
-    @DeleteMapping("{id}")
-    @Operation(summary = "删除通知")
-    @PreAuthorize("hasAuthority('sys:notice:delete')")
-    public Result<String> delete(@PathVariable Long id) {
-        noticeService.delete(id);
-        return Result.ok();
+//    @DeleteMapping("{id}")
+//    @Operation(summary = "删除通知")
+//    @PreAuthorize("hasAuthority('sys:notice:delete')")
+//    public Result<String> delete(@PathVariable Long id) {
+//        noticeService.delete(id);
+//        return Result.ok();
+//    }
+
+    @PostMapping("/delete")
+    @Operation(summary = "批量删除通告")
+    @PreAuthorize("hasAnyAuthority('sys:notice:delete')")
+    public Result<String> delete (@RequestBody(required = false) List<Long> ids){
+        System.out.println(ids);
+        noticeService.delete(ids);
+        return Result.ok("删除成功");
     }
 
 }

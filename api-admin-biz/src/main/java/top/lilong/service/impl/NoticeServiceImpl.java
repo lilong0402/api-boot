@@ -53,10 +53,15 @@ public class NoticeServiceImpl extends BaseServiceImpl<NoticeDao, NoticeEntity> 
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
-    public void delete(Long id) {
-        removeById(id);
+    public void delete(List<Long> id) {
+        removeBatchByIds(id);
     }
+
+//    @Override
+//    @Transactional(rollbackFor = Exception.class)
+//    public void delete(List<Long> id) {
+//        removeById(id);
+//    }
 
     /**
      * 查询条件构造

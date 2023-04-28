@@ -17,7 +17,7 @@
         <dependency>
             <groupId>top.lilong</groupId>
             <artifactId>api-base</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 

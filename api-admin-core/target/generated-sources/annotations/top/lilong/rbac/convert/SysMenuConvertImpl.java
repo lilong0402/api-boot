@@ -8,7 +8,7 @@ import top.lilong.rbac.vo.SysMenuVO;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-04-24T10:48:48+0800",
+    date = "2023-04-28T13:58:35+0800",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.5 (Oracle Corporation)"
 )
 public class SysMenuConvertImpl implements SysMenuConvert {

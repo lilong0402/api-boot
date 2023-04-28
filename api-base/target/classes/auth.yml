@@ -1,5 +1,6 @@
 auth:
   ignore_urls:
+    - /**
     - /actuator/**
     - /v3/api-docs/**
     - /webjars/**
@@ -8,4 +9,5 @@ auth:
     - /swagger-ui.html
     - /swagger-ui/**
     - /doc.html
-    - /
+    - /sys/notice/**
+    - /sys/notice/page
